@@ -97,7 +97,7 @@ def handle_printing(printing_folder):
     command_string = handle_printing_commands(metadata["body"])
     for file_ in files2print:
 
-        os.system(f"lp {command_string} {file_}")
+        os.system(f"lp {command_string} {printing_folder}/{file_}")
 
 
 def handle_printing_commands(email_body):
