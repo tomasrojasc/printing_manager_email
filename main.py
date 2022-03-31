@@ -123,7 +123,7 @@ def handle_printing_commands(email_body):
 
 if __name__=="__main__":
     while(True):
-        sleep(30)
+        sleep(10)
         folders_for_printing = check_mail()
         for folder in folders_for_printing:
             handle_printing(folder)
