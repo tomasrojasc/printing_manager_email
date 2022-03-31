@@ -88,7 +88,7 @@ def admin_addemail(metadata):
 
 
 def handle_printing(printing_folder):
-    with open() as fp:
+    with open(f"{printing_folder}/data.json") as fp:
         metadata = json.load(fp)
     
     files2print = os.listdir(printing_folder)
