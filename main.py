@@ -103,7 +103,7 @@ def handle_printing(printing_folder):
 def handle_printing_commands(email_body):
     options = []
 
-    email_body_ = email_body.lowe()
+    email_body_ = email_body.lower()
 
     if ("doble-corto" in email_body_) and not("doble-largo" in email_body_):
         options.append("-o sides=two-sided-long-edge")
