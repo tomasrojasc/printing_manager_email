@@ -92,7 +92,7 @@ def handle_printing(printing_folder):
         metadata = json.load(fp)
     
     files2print = os.listdir(printing_folder)
-    files2print = [f for f in files if not(".json" in f)]
+    files2print = [f for f in files2print if not(".json" in f)]
 
     command_string = handle_printing_commands(metadata["body"])
     for file_ in files2print:
