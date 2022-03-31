@@ -2,3 +2,6 @@ email_list.json
 download_folder/*
 __pycache__/*
 config.py
+Start.sh
+Stop.sh
+
