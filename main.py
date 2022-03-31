@@ -127,6 +127,6 @@ if __name__=="__main__":
         folders_for_printing = check_mail()
         for folder in folders_for_printing:
             handle_printing(folder)
-            sleep(5)
+            sleep(30)
             shutil.rmtree(folder)
 
