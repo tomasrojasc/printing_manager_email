@@ -1,0 +1,11 @@
+[Unit]
+Description=Printing service for interacting with email
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/printing_manager_email/print-env/bin/python /home/pi/printing_manager_email/main.py /home/pi/printing_manager_email
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
