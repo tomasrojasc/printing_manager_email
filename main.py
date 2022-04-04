@@ -5,6 +5,7 @@ from config import host, username, password, download_folder, user_emails, admin
 import re
 from time import sleep
 import shutil
+import sys
 
 if not os.path.isdir(download_folder):
     os.makedirs(download_folder, exist_ok=True)
@@ -122,6 +123,8 @@ def handle_printing_commands(email_body):
         
 
 if __name__=="__main__":
+    path_ = sys.argv[1]
+    os.chdir(path_)
     while(True):
         sleep(10)
         folders_for_printing = check_mail()
