@@ -1,9 +1,9 @@
 import sys
 path_ = sys.argv[1]
-os.chdir(path_)
-
 
 import os
+os.chdir(path_)
+
 from imbox import Imbox
 import json
 from config import host, username, password, download_folder, user_emails, admin_emails
