@@ -4,4 +4,4 @@ __pycache__/*
 config.py
 Start.sh
 Stop.sh
-
+/print-env/*
