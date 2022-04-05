@@ -64,7 +64,7 @@ def save_data_for_printing(metadata_path, metadata, message, download_folder, ui
 
     for idx, attachment in enumerate(message.attachments): 
         try:
-            att_fn = attachment.get('filename')
+            att_fn = attachment.get('filename').replace(" ", "_")
             download_path = f"{download_folder}/{uid}/{att_fn}"
             print(download_path)
             sleep(5)
