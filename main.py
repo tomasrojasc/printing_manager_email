@@ -66,7 +66,7 @@ def save_data_for_printing(metadata_path, metadata, message, download_folder, ui
         try:
             att_fn = attachment.get('filename').replace(" ", "_")
             download_path = f"{download_folder}/{uid}/{att_fn}"
-            print(download_path)
+            os.system(f"echo {download_path}")
             sleep(5)
             with open(download_path, "wb") as fp:
                 fp.write(attachment.get('content').read())
