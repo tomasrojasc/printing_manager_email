@@ -18,7 +18,7 @@ Al nivel más básico, a la fecha existen dos tipos de usuarios: usuarios normal
 
 Estos usuarios cuentan con un solo comando, este es el comando ``print``. Para usar el comando basta con enviar un correo con el asunto igual al comando. Las opciones disponibles que basta que estén en el cuerpo del correo, en cualquier órden son:
 
-+ ``doble-largo``: imprime el archivo adjunto a doble cara por el borde largo
++ ``doble-largo``: imprime el archivo adjunto a doble cara por el borde largo (opción por defecto)
 + ``doble-corto``: imprime el archivo adjunto a doble cara por el borde corto
 + ``pgs [a-b]``: imprime desde las páginas ``a`` a la ``b`` inclusicos
 
@@ -31,5 +31,5 @@ Ejemplo de uso:
 
 ![](imgs/example.png)
 
-En este ejemplo vemos que se imprimirá el documento "Calendario_FI3003_2022_1.pdf" a doble cara con borde largo
+En este ejemplo vemos que se imprimirá el documento "Calendario_FI3003_2022_1.pdf" a doble cara con borde largo. Edit: AHORA EL BORDE LARGO DOBLE CARA ES DEFECTO, NO HACE FALTA MANDAR NINGÚN COMANDO.
 
